@@ -1,0 +1,8 @@
+/support.js
+  Content-Type: application/javascript; charset=utf-8
+/doc-page.js
+  Content-Type: application/javascript; charset=utf-8
+/image-slot.js
+  Content-Type: application/javascript; charset=utf-8
+/*
+  Cache-Control: public, max-age=0, must-revalidate
