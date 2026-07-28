@@ -45,6 +45,9 @@
     }
     @media (max-width:760px){
       .iwp-faq-a-mobile { display: block; }
+      .iwp-chart-header{ justify-content:center!important; }
+      .iwp-chart-controls{ width:100%!important; }
+      .iwp-chart-controls > div:first-child{ justify-content:center!important; flex-wrap:wrap!important; }
       .iwp-faq-answer-panel { display: none !important; }
     }
     @media (hover: hover) { .iwp-about-link:hover { color: #B45F3F !important; } }
@@ -124,8 +127,8 @@
   }
   @media (max-width:900px){
     [data-screen-label="Services Hero"], [data-screen-label="Book Hero"]{ flex-direction:column!important; align-items:flex-start!important; gap:30px!important; padding:96px 22px 54px!important; box-sizing:border-box!important; width:100%!important; }
-    [data-screen-label="Services Hero"] [style*="width: 480px"]{ width:100%!important; height:auto!important; aspect-ratio:4/5; }
-    [data-screen-label="Book Hero"] [style*="width: 520px"]{ width:100%!important; height:auto!important; aspect-ratio:1/1; }
+    [data-screen-label="Services Hero"] [style*="width: 480px"]{ width:100%!important; max-width:none!important; height:auto!important; aspect-ratio:4/5; }
+    [data-screen-label="Book Hero"] [style*="width: 520px"]{ width:100%!important; max-width:none!important; height:auto!important; aspect-ratio:1/1; }
     [data-screen-label="Services Hero"] [style*="linear-gradient(90deg"], [data-screen-label="Book Hero"] [style*="linear-gradient(90deg"]{ background:linear-gradient(180deg,rgba(14,31,55,0) 50%,rgba(14,31,55,0.35) 100%)!important; }
   }
 
@@ -356,12 +359,12 @@
 
     <div style="position: relative; border-radius: 28px; padding: 20px; background: radial-gradient(88% 120% at 10% 0%, rgba(180,95,63,0.18), transparent 55%), radial-gradient(90% 120% at 94% 100%, rgba(14,31,55,0.20), transparent 55%), linear-gradient(160deg, #F2E8D6 0%, #E7D9C0 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,0.55);">
       <div style="background: rgba(255,253,248,0.5); backdrop-filter: blur(22px) saturate(1.3); -webkit-backdrop-filter: blur(22px) saturate(1.3); border: 1px solid rgba(255,255,255,0.65); border-radius: 20px; padding: 44px 46px; display: flex; flex-direction: column; gap: 28px; box-shadow: 0 34px 74px -36px rgba(14,31,55,0.5), inset 0 1px 0 rgba(255,255,255,0.85);">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
+      <div class="iwp-chart-header" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <div style="font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.2em; color: #B45F3F;">IMPACT OF % FEES VS FLAT FEES OVER DIFFERENT TIME PERIODS</div>
           <div style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; line-height: 1.15; color: #0E1F37;">The cost of advice can vary wildly over time, even when you start with a similar fee.</div>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
+        <div class="iwp-chart-controls" style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
           <div style="display: flex; gap: 10px;">
             <div onClick="{{ setChart10 }}" class="iwp-yr" style="{{ chart10Style }}">10 YEARS</div>
             <div onClick="{{ setChart20 }}" class="iwp-yr" style="{{ chart20Style }}">20 YEARS</div>
